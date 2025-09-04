@@ -1,0 +1,5 @@
+export { MainBanner } from "./main-banner"
+export { ConsultingService } from "./consulting-service"
+export { Books } from "./books"
+export { MainGallery } from "./main-gallery"
+export { MainRecipes } from "./main-recipes"

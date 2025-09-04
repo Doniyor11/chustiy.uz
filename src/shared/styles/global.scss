@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Taviraj:wght@300;400;500;600;700;800;900&display=swap");
+@import "./font-mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-title {
+  color: #111827;
+  @include font-taviraj;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 68px;
+
+  &.sm {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 32px;
+    line-height: 36px;
+
+    &.sm {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+}
+
+.section-subtitle {
+  color: #667085;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 64px;
+  @media screen and (max-width: 576px) {
+    padding: 0 16px;
+  }
+}
+
+.btn-filled__back {
+  height: auto;
+  padding: 11px 20px;
+  border-radius: 24px;
+  background: #111827;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+
+  &:disabled {
+    color: #667085;
+    border-radius: 24px;
+    background: #f2f4f7;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.btn-outline {
+  height: auto;
+  padding: 11px 20px;
+  border-radius: 24px;
+  border: 1px solid #111827;
+  background: none;
+
+  color: #111827;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+
+  @media screen and (max-width: 576px) {
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 18px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
