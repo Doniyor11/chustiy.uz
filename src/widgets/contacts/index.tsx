@@ -15,8 +15,8 @@ export const Contacts = () => {
         <Text className={"section-title sm"}>Biz bilan bog’lanish</Text>
         <Text className={"section-subtitle"}>
           Xizmatlarimiz, buyurtmalarimiz yoki hamkorlik imkoniyatlari haqida
-          savollaringiz bormi? Bizning jamoamiz doimo sizga yo'l ko'rsatish va
-          to'g'ri yordam berish uchun shu yerda.
+          savollaringiz bormi? Bizning jamoamiz doimo sizga yo&apos;l
+          ko&apos;rsatish va to&apos;g&apos;ri yordam berish uchun shu yerda.
         </Text>
 
         <SegmentedControl

@@ -1,4 +1,5 @@
 import { Burger, Select } from "@mantine/core"
+import { useMediaQuery } from "@mantine/hooks"
 import cx from "clsx"
 import Link from "next/link"
 import { useRouter } from "next/router"
@@ -13,6 +14,8 @@ import s from "./styles.module.scss"
 export const Navbar = () => {
   const router = useRouter()
   const [isOpen, setIsOpen] = useState(false)
+  const matches = useMediaQuery("(max-width: 576px)")
+
   return (
     <div className={cx(s.navbarWrapper, "container")}>
       <Link href={"/"} className={s.logo}>
@@ -40,7 +43,7 @@ export const Navbar = () => {
         data={["Ru", "Uz"]}
         leftSection={<IconGlobal />}
       />
-      <Burger opened={isOpen} onClick={() => setIsOpen(!isOpen)} />
+      {matches && <Burger opened={isOpen} onClick={() => setIsOpen(!isOpen)} />}
     </div>
   )
 }
