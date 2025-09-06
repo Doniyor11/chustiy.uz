@@ -26,7 +26,8 @@ export const Navbar = () => {
       <ul className={s.menu}>
         {MenuData?.map((item, index) => {
           const pathName = router.pathname
-          return item?.path ? (
+
+          return item.children.length === 0 ? (
             <li
               key={index}
               className={cx(s.link, {
@@ -40,7 +41,7 @@ export const Navbar = () => {
               <Menu.Target>
                 <Text
                   className={cx(s.parentLink, {
-                    [s.active]: pathName.split("/")[1] == "services",
+                    [s.active]: pathName.split("/")[1] === item?.path,
                   })}
                 >
                   {item?.text} <IconDown />

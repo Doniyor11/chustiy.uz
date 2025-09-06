@@ -2,13 +2,16 @@ export const MenuData = [
   {
     text: "Asosiy",
     path: "/",
+    children: [],
   },
   {
     text: "Biz haqimizda",
     path: "/about",
+    children: [],
   },
   {
     text: "Xizmatlar",
+    path: "services",
     children: [
       {
         text: "Katering",
@@ -23,17 +26,34 @@ export const MenuData = [
   {
     text: "Restoranlar",
     path: "/restaurants",
+    children: [],
   },
   {
     text: "Loyihalar",
-    path: "/projects",
+    path: "projects",
+    children: [
+      {
+        text: "Do’konlar",
+        path: "/projects/shops",
+      },
+      {
+        text: "Kitoblar",
+        path: "/projects/books",
+      },
+      {
+        text: "Retseptlar",
+        path: "/projects/recipes",
+      },
+    ],
   },
   {
     text: "Tadbirlar",
     path: "/events",
+    children: [],
   },
   {
     text: "Kontaktlar",
     path: "/contacts",
+    children: [],
   },
 ]
