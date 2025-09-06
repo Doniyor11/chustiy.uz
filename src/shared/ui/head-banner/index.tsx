@@ -12,7 +12,7 @@ interface IProps {
 export const HeadBanner: FC<IProps> = ({ subtitle, title, m = "24px 0 0" }) => {
   return (
     <Box className={s.box} m={m}>
-      <Text className={"section-title sm"}>{title}</Text>
+      <Text className={"section-title md"}>{title}</Text>
       <Text className={s.subtitle}>{subtitle}</Text>
     </Box>
   )

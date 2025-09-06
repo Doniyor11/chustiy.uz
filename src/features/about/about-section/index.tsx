@@ -10,7 +10,7 @@ export const AboutSection = () => {
   return (
     <div className={s.sectionWrapper}>
       <Box>
-        <Text className={"section-title"}>
+        <Text className={"section-title md"}>
           Taom bu – nafaqat ovqat, bu — tuyg‘u, xotira va san’at.
         </Text>
         <Text className={"section-subtitle"} mb={12}>

@@ -12,7 +12,7 @@ import s from "./styles.module.scss"
 export const ServiceTypes = () => {
   return (
     <div className={s.sectionWrapper}>
-      <Text className={"section-title"}>Xizmatlar turlari</Text>
+      <Text className={"section-title md"}>Xizmatlar turlari</Text>
 
       <Box className={s.box}>
         <Image

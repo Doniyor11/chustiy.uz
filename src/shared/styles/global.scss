@@ -24,6 +24,11 @@ a {
   font-weight: 500;
   line-height: 68px;
 
+  &.md {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
   &.sm {
     font-size: 36px;
     line-height: 48px;

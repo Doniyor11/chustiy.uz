@@ -48,8 +48,13 @@ export const MenuData = [
   },
   {
     text: "Tadbirlar",
-    path: "/events",
-    children: [],
+    path: "events",
+    children: [
+      {
+        text: "Festivallar",
+        path: "/events/festivals",
+      },
+    ],
   },
   {
     text: "Kontaktlar",

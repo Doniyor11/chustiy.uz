@@ -1,6 +1,7 @@
 import { Button, Text } from "@mantine/core"
 import cx from "clsx"
 import Image from "next/image"
+import { useRouter } from "next/router"
 import React from "react"
 
 import IconRight from "@/shared/assets/images/icons/icon-right.svg"
@@ -12,6 +13,7 @@ import ImageTwo from "@/shared/assets/images/image-two.png"
 import s from "./styles.module.scss"
 
 export const MainGallery = () => {
+  const router = useRouter()
   return (
     <>
       <div className={s.sectionWrapper}>
@@ -34,12 +36,14 @@ export const MainGallery = () => {
           <Image className={s.image} src={ImageFour} alt={"ImageFour"} />
           <div className={s.bottomRectangle} />
         </div>
-        <Button
-          className={cx(s.moreBtn, "btn-outline")}
-          rightSection={<IconRight />}
-        >
-          Batafsil
-        </Button>
+        {(router.pathname === "/" || router.pathname === "/main") && (
+          <Button
+            className={cx(s.moreBtn, "btn-outline")}
+            rightSection={<IconRight />}
+          >
+            Batafsil
+          </Button>
+        )}
       </div>
     </>
   )

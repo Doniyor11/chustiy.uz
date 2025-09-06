@@ -11,7 +11,7 @@ import s from "./styles.module.scss"
 export const Benefits = () => {
   return (
     <div className={s.sectionWrapper}>
-      <Text className={"section-title"} ta={"center"}>
+      <Text className={"section-title md"} ta={"center"}>
         Afzalliklar
       </Text>
       <div className={s.cards}>
