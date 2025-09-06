@@ -1,0 +1,30 @@
+.sectionWrapper {
+  margin: 100px;
+
+  :global(.section-title) {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      margin: 40px 0;
+    }
+
+    .boxTitle {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    .image {
+      width: 100%;
+      max-width: 496px;
+      height: 196px;
+    }
+  }
+}

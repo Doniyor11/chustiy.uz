@@ -9,7 +9,16 @@ export const MenuData = [
   },
   {
     text: "Xizmatlar",
-    path: "/services",
+    children: [
+      {
+        text: "Katering",
+        path: "/services/catering",
+      },
+      {
+        text: "Konsalting",
+        path: "/services/consulting",
+      },
+    ],
   },
   {
     text: "Restoranlar",

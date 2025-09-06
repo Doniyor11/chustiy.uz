@@ -1,4 +1,4 @@
-import { Burger, Select } from "@mantine/core"
+import { Burger, Menu, Select, Text } from "@mantine/core"
 import { useMediaQuery } from "@mantine/hooks"
 import cx from "clsx"
 import Link from "next/link"
@@ -7,6 +7,7 @@ import { useState } from "react"
 
 import { MenuData } from "@/widgets/layouts/navbar/libs.ts"
 
+import IconDown from "@/shared/assets/images/icons/icon-chevron-down.svg"
 import IconGlobal from "@/shared/assets/images/icons/icon-global.svg"
 
 import s from "./styles.module.scss"
@@ -24,15 +25,42 @@ export const Navbar = () => {
 
       <ul className={s.menu}>
         {MenuData?.map((item, index) => {
-          return (
+          const pathName = router.pathname
+          return item?.path ? (
             <li
               key={index}
               className={cx(s.link, {
-                [s.active]: item?.path === router.pathname,
+                [s.active]: item?.path === pathName,
               })}
             >
               <Link href={item?.path}>{item?.text}</Link>
             </li>
+          ) : (
+            <Menu trigger={"hover"} position={"bottom"} radius={12} offset={16}>
+              <Menu.Target>
+                <Text
+                  className={cx(s.parentLink, {
+                    [s.active]: pathName.split("/")[1] == "services",
+                  })}
+                >
+                  {item?.text} <IconDown />
+                </Text>
+              </Menu.Target>
+              <Menu.Dropdown>
+                {item?.children?.map((child, index) => (
+                  <Menu.Item
+                    className={cx(s.menuItem, {
+                      [s.active]: child.path === pathName,
+                    })}
+                    key={index}
+                    component={Link}
+                    href={child.path}
+                  >
+                    {child.text}
+                  </Menu.Item>
+                ))}
+              </Menu.Dropdown>
+            </Menu>
           )
         })}
       </ul>

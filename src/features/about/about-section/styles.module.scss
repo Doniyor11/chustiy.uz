@@ -1,0 +1,12 @@
+.sectionWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  margin-top: 40px;
+
+  .image {
+    width: 100%;
+    max-width: 638px;
+    height: 428px;
+  }
+}

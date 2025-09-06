@@ -7,6 +7,7 @@ import {
   ConsultingService,
   MainBanner,
   MainGallery,
+  MainMarkets,
   MainRecipes,
 } from "@/features/main"
 
@@ -21,6 +22,7 @@ const HomePage = () => {
         <ConsultingService />
         <Books />
         <MainGallery />
+        <MainMarkets />
         <MainRecipes />
       </main>
       <Contacts />
