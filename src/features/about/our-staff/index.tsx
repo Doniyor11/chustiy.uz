@@ -1,5 +1,6 @@
 import { Carousel } from "@mantine/carousel"
 import { Box, Text } from "@mantine/core"
+import { useMediaQuery } from "@mantine/hooks"
 import Image from "next/image"
 import React from "react"
 
@@ -9,6 +10,8 @@ import ImageOne from "@/shared/assets/images/image-chustiy.png"
 import s from "./styles.module.scss"
 
 export const OurStaff = () => {
+  const matches = useMediaQuery("(max-width: 576px)")
+
   return (
     <div className={s.sectionWrapper}>
       <Text className={"section-title sm"}>
@@ -19,9 +22,9 @@ export const OurStaff = () => {
 
       <Carousel
         slideGap={24}
-        slideSize={457}
-        align={"center"}
-        height={372}
+        slideSize={matches ? "100%" : 457}
+        align={matches ? "start" : "center"}
+        height={matches ? 322 : 372}
         slidesToScroll={"auto"}
         classNames={{
           controls: s.carouselControls,

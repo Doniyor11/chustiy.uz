@@ -8,6 +8,7 @@
     display: flex;
     gap: 28px;
     margin-top: 100px;
+
     &:nth-child(even) {
       flex-direction: row-reverse;
     }
@@ -96,6 +97,56 @@
           a {
             width: 28px;
             height: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sectionWrapper {
+    padding: 0;
+
+    .box {
+      gap: 16px;
+      margin-top: 40px;
+      flex-direction: column;
+
+      &:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .map {
+        max-width: 100%;
+        height: 280px;
+      }
+
+      .boxRight {
+        max-width: 100%;
+
+        .descriptionWrapper {
+          padding: 16px 0;
+          margin: 16px 0 18px;
+
+          .descriptionTarget {
+            font-size: 18px;
+            line-height: 22px;
+          }
+
+          .text {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+
+        .contactBox {
+          .label {
+            margin-bottom: 18px;
+          }
+
+          .link {
+            margin-bottom: 16px;
           }
         }
       }

@@ -79,12 +79,14 @@
     }
   }
 }
+
 .timelineItem {
   &::before {
     border-color: #d0d5dd;
     background: #d0d5dd;
   }
 }
+
 .timelineBullet {
   background: #d0d5dd;
   border-color: #d0d5dd;
@@ -92,5 +94,55 @@
   &[data-active="true"] {
     border-color: #ffa80a;
     background: #ffa80a;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sectionWrapper {
+    margin-top: 20px;
+
+    :global(.section-title) {
+      margin: 0 auto 24px;
+    }
+
+    .timelineWrapper {
+      .timeline {
+        position: absolute;
+        top: 50.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .boxes {
+        .box {
+          gap: 12px;
+          justify-content: center;
+
+          .texts {
+            width: 100%;
+            max-width: 190px;
+
+            .year {
+              font-size: 24px;
+              line-height: 26px;
+            }
+
+            .title {
+              font-size: 18px;
+              line-height: 20px;
+              margin-top: 8px;
+              padding-right: 16px;
+            }
+          }
+
+          .description {
+            font-size: 14px;
+            line-height: 16px;
+            max-width: 190px;
+            padding-left: 16px;
+          }
+        }
+      }
+    }
   }
 }

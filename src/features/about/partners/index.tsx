@@ -2,6 +2,7 @@
 
 import { Carousel } from "@mantine/carousel"
 import { Text } from "@mantine/core"
+import { useMediaQuery } from "@mantine/hooks"
 import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
 import React, { useRef } from "react"
@@ -13,8 +14,9 @@ import ImageTwo from "@/shared/assets/images/image-facebook.png"
 import s from "./styles.module.scss"
 
 export const Partners = () => {
-  const autoplay = useRef(Autoplay({ delay: 700, stopOnInteraction: false }))
+  const matches = useMediaQuery("(max-width: 576px)")
 
+  const autoplay = useRef(Autoplay({ delay: 700, stopOnInteraction: false }))
   return (
     <div className={s.sectionWrapper}>
       <Text className={"section-title sm"}>
@@ -25,10 +27,10 @@ export const Partners = () => {
 
       <Carousel
         loop
-        slideGap={20}
         align="start"
-        slideSize={243}
         withControls={false}
+        slideGap={matches ? 12 : 20}
+        slideSize={matches ? 200 : 243}
         plugins={[autoplay.current]}
         onMouseEnter={autoplay.current.stop}
         onMouseLeave={autoplay.current.reset}

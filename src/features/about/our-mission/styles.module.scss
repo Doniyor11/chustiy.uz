@@ -73,3 +73,44 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .sectionWrapper {
+    margin-top: 20px;
+
+    .sectionTitle {
+      width: 100%;
+
+      span {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+
+    .box {
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 20px;
+
+      .image {
+        max-height: 350px;
+        object-fit: contain;
+      }
+
+      :global(.section-title) {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 16px;
+      }
+
+      .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+
+        .card {
+          padding: 16px;
+        }
+      }
+    }
+  }
+}

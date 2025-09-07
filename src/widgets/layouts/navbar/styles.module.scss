@@ -82,18 +82,18 @@
       }
     }
   }
+}
 
-  .lang {
-    max-width: 90px;
+.lang {
+  max-width: 90px;
 
-    input {
-      border: none;
-      color: #67637a;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 20px;
-      text-transform: uppercase;
-    }
+  input {
+    border: none;
+    color: #67637a;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
   }
 }
 
@@ -104,8 +104,48 @@
   line-height: normal;
   display: flex;
   align-items: center;
+
   &.active {
     font-weight: 600;
+  }
+}
+
+.mobileDrawer {
+  padding: 16px;
+
+  .drawerHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .drawerBody {
+    margin-top: 24px;
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      color: #111827;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-bottom: 12px;
+
+      &.active {
+        font-weight: 600;
+
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .collapse {
+      padding-left: 16px;
+    }
   }
 }
 

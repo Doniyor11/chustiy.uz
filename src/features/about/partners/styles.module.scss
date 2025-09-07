@@ -28,3 +28,25 @@
     height: 81px;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .sectionWrapper {
+    margin: 40px auto 0;
+    padding: 20px 0;
+
+    :global(.section-title) {
+      margin: 0 auto 24px;
+
+      span {
+        font-size: 20px;
+        line-height: 22px;
+      }
+    }
+
+    .image {
+      width: 200px;
+      height: 60px;
+      object-fit: contain;
+    }
+  }
+}

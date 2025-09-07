@@ -91,3 +91,40 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .sectionWrapper {
+    margin: 0 auto;
+
+    :global(.section-title) {
+      margin: 0 auto 24px;
+    }
+
+    .card {
+      width: 100%;
+      padding: 24px;
+      border-radius: 35px;
+
+      .description {
+        font-size: 18px;
+        line-height: 20px;
+        margin: 16px 0 18px;
+      }
+
+      .cardBottom {
+        gap: 12px;
+
+        .image {
+          width: 45px;
+          height: 45px;
+        }
+
+        .info {
+          .name {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

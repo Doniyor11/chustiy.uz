@@ -21,7 +21,6 @@ const CateringPage = () => {
         />
         <ServiceTypes />
         <Benefits />
-
         <MainGallery />
       </main>
       <Contacts />

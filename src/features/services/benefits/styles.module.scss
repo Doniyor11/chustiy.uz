@@ -44,3 +44,37 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .sectionWrapper {
+    .cards {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+
+      .card {
+        padding: 16px;
+
+        .icon {
+          width: 50px;
+          height: 50px;
+
+          svg {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .cardTitle {
+          font-size: 18px;
+          margin: 24px 0 4px;
+        }
+
+        .cardSubtitle {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

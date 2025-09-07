@@ -12,6 +12,7 @@
 
   .sectionLeft {
     margin-top: 44px;
+
     .contacts {
       width: 100%;
       display: flex;
@@ -106,4 +107,42 @@
   height: calc(100% - 8px);
   border-radius: 24px !important;
   background: #111827 !important;
+}
+
+@media screen and (max-width: 576px) {
+  .sectionWrapper {
+    gap: 24px;
+    flex-direction: column;
+    margin: 20px auto 40px;
+
+    .sectionLeft {
+      margin-top: 0;
+
+      .contacts {
+        flex-direction: column;
+        gap: 16px;
+        margin: 20px 0;
+
+        .contactBox {
+          .label {
+            margin-bottom: 8px;
+          }
+
+          .link,
+          .text {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+
+    .sectionRight {
+      max-width: 100%;
+      padding: 16px;
+
+      :global(.section-subtitle) {
+        margin: 12px 0 24px;
+      }
+    }
+  }
 }
