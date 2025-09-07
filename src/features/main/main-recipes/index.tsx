@@ -1,5 +1,6 @@
 import { Box, Button, Text } from "@mantine/core"
 import Image from "next/image"
+import { useRouter } from "next/router"
 import React from "react"
 
 import IconRight from "@/shared/assets/images/icons/icon-right.svg"
@@ -8,6 +9,7 @@ import ImageRecipes from "@/shared/assets/images/image-recipes.jpg"
 import s from "./styles.module.scss"
 
 export const MainRecipes = () => {
+  const router = useRouter()
   return (
     <div className={s.sectionWrapper}>
       <Text className={"section-title sm"}>Retseptlar</Text>
@@ -51,6 +53,7 @@ export const MainRecipes = () => {
             w={150}
             className={"btn-outline"}
             rightSection={<IconRight />}
+            onClick={() => router.push("/projects/recipes/1")}
           >
             Batafsil
           </Button>
@@ -94,6 +97,7 @@ export const MainRecipes = () => {
             w={150}
             className={"btn-outline"}
             rightSection={<IconRight />}
+            onClick={() => router.push("/projects/recipes/1")}
           >
             Batafsil
           </Button>
@@ -137,6 +141,7 @@ export const MainRecipes = () => {
             w={150}
             className={"btn-outline"}
             rightSection={<IconRight />}
+            onClick={() => router.push("/projects/recipes/1")}
           >
             Batafsil
           </Button>

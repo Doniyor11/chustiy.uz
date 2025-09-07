@@ -1,5 +1,6 @@
 import { Box, Button, Text } from "@mantine/core"
 import Image from "next/image"
+import { useRouter } from "next/router"
 import React from "react"
 
 import ImageOne from "@/shared/assets/images/consulting-image.png"
@@ -13,6 +14,7 @@ import ImageTwo from "@/shared/assets/images/restaurants-image.png"
 import s from "./styles.module.scss"
 
 export const ConsultingService = () => {
+  const router = useRouter()
   return (
     <>
       <div className={s.sectionWrapper}>
@@ -85,7 +87,11 @@ export const ConsultingService = () => {
             <b>Aksu</b> restoranlari shaharning turli nuqtalarida mehmonlarni
             doimo ochiq qo‘llar bilan kutib oladi.
           </Text>
-          <Button className={"btn-outline"} rightSection={<IconRight />}>
+          <Button
+            className={"btn-outline"}
+            rightSection={<IconRight />}
+            onClick={() => router.push("/contacts")}
+          >
             Batafsil
           </Button>
         </Box>

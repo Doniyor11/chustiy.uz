@@ -1,5 +1,6 @@
 import { Carousel } from "@mantine/carousel"
 import { Anchor, Flex, Text } from "@mantine/core"
+import { useMediaQuery } from "@mantine/hooks"
 import React from "react"
 
 import IconPhone from "@/shared/assets/images/icons/icon-phone.svg"
@@ -10,16 +11,18 @@ import IconWhatsapp from "@/shared/assets/images/icons/icon-whatsapp.svg"
 import s from "./styles.module.scss"
 
 export const FestivalsList = () => {
+  const matches = useMediaQuery("(max-width: 576px)")
+
   return (
     <div className={s.sectionWrapper}>
       <Text className={"section-title sm"}>Festival ro’yxati</Text>
 
       <Carousel
         loop
-        height={420}
+        height={matches ? 320 : 420}
         slideGap={24}
-        slideSize={528}
-        align={"center"}
+        slideSize={matches ? "100%" : 528}
+        align={matches ? "start" : "center"}
         slidesToScroll={"auto"}
         classNames={{
           controls: s.carouselControls,

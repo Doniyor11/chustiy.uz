@@ -22,3 +22,30 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .sectionWrapper {
+    margin: 40px 0;
+
+    .box {
+      flex-direction: column;
+      gap: 24px;
+
+      &:nth-child(even) {
+        flex-direction: column;
+        margin-top: 40px;
+      }
+
+      .image {
+        height: 300px;
+        object-fit: contain;
+        position: relative;
+        left: 10px;
+      }
+
+      :global(.section-subtitle) {
+        margin: 16px 0 24px;
+      }
+    }
+  }
+}

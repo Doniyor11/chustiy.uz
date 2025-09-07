@@ -34,3 +34,25 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {
+  .cards {
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 16px;
+
+    .card {
+      max-width: 200px;
+
+      .image {
+        height: 200px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}

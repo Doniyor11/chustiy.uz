@@ -1,5 +1,6 @@
 import { Box, Button, Flex, Text } from "@mantine/core"
 import Image from "next/image"
+import { useRouter } from "next/router"
 import React from "react"
 
 import IconRight from "@/shared/assets/images/icons/icon-right.svg"
@@ -9,6 +10,7 @@ import ImageTwo from "@/shared/assets/images/main-image-2.png"
 import s from "./styles.module.scss"
 
 export const MainBanner = () => {
+  const router = useRouter()
   return (
     <>
       <div className={s.sectionWrapper}>
@@ -23,9 +25,18 @@ export const MainBanner = () => {
             mujassam.
           </Text>
           <Flex align={"center"} gap={20}>
-            <Button className={"btn-filled__back"}>Biz haqimizda</Button>
+            <Button
+              onClick={() => router.push("/about")}
+              className={"btn-filled__back"}
+            >
+              Biz haqimizda
+            </Button>
 
-            <Button w={147} className={"btn-outline"}>
+            <Button
+              w={147}
+              className={"btn-outline"}
+              onClick={() => router.push("/contacts")}
+            >
               Kontaktlar
             </Button>
           </Flex>
@@ -60,7 +71,11 @@ export const MainBanner = () => {
             bayramingiz xalqaro mezonlarda, milliy ruhda va unutilmas
             taassurotlar bilan o‘tadi.
           </Text>
-          <Button className={"btn-outline"} rightSection={<IconRight />}>
+          <Button
+            className={"btn-outline"}
+            rightSection={<IconRight />}
+            onClick={() => router.push("/services/catering")}
+          >
             Batafsil
           </Button>
         </Box>

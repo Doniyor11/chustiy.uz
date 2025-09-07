@@ -1,5 +1,6 @@
 import { Box, Button, Text } from "@mantine/core"
 import Image from "next/image"
+import { useRouter } from "next/router"
 import React from "react"
 
 import IconRight from "@/shared/assets/images/icons/icon-right.svg"
@@ -8,6 +9,7 @@ import ImageRestaurants from "@/shared/assets/images/restaurants-image.png"
 import s from "./styles.module.scss"
 
 export const MainMarkets = () => {
+  const router = useRouter()
   return (
     <>
       <div className={s.sectionWrapper}>
@@ -22,7 +24,11 @@ export const MainMarkets = () => {
             ham ushbu do‘konlar bilan tanishib, jamoangiz uchun eng maqbul va
             zamonaviy uslubdagi kiyimlarni tanlashingiz mumkin.
           </Text>
-          <Button className={"btn-outline"} rightSection={<IconRight />}>
+          <Button
+            onClick={() => router.push("/projects/shops")}
+            className={"btn-outline"}
+            rightSection={<IconRight />}
+          >
             Batafsil
           </Button>
         </Box>
