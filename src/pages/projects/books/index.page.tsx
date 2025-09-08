@@ -5,6 +5,7 @@ import { Contacts } from "@/widgets"
 
 import { BooksList, ProjectsInfo } from "@/features/projects"
 
+import ImageOne from "@/shared/assets/images/image-chustiy-2.png"
 import { HeadBanner } from "@/shared/ui"
 
 const BooksPage = () => {
@@ -21,6 +22,7 @@ const BooksPage = () => {
           }
         />
         <ProjectsInfo
+          image={ImageOne}
           title={"Kitoblar"}
           description={
             "Men — oshpazlikka oshno bo‘lgan, har bir taomni qalbdan his qilib tayyorlaydigan shaxsman. O‘n yildan ortiq tajribam davomida turli oshxonalar bilan ishladim: milliy an’anaviy taomlardan tortib, zamonaviy fusion yo‘nalishlarigacha. Har bir mehmon uchun shaxsiy yondashuv va mukammal ta’m — mening ustuvor vazifamdir."

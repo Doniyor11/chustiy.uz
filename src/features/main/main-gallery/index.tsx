@@ -5,10 +5,10 @@ import { useRouter } from "next/router"
 import React from "react"
 
 import IconRight from "@/shared/assets/images/icons/icon-right.svg"
-import ImageFour from "@/shared/assets/images/image-four.png"
-import ImageOne from "@/shared/assets/images/image-one.png"
-import ImageThree from "@/shared/assets/images/image-three.png"
-import ImageTwo from "@/shared/assets/images/image-two.png"
+import ImageFour from "@/shared/assets/images/image-four.jpg"
+import ImageOne from "@/shared/assets/images/image-one.jpg"
+import ImageThree from "@/shared/assets/images/image-three.jpg"
+import ImageTwo from "@/shared/assets/images/image-two.jpg"
 
 import s from "./styles.module.scss"
 
