@@ -3,7 +3,11 @@ import cx from "clsx"
 import React, { useState } from "react"
 import { Case, Switch } from "react-if"
 
-import { EmailForm } from "@/features/contact-forms"
+import {
+  EmailForm,
+  PhoneNumberForm,
+  TelegramForm,
+} from "@/features/contact-forms"
 
 import IconFacebook from "@/shared/assets/images/icons/icon-facebook.svg"
 import IconInstagram from "@/shared/assets/images/icons/icon-instagram.svg"
@@ -105,10 +109,10 @@ const ContactsPage = () => {
             <EmailForm />
           </Case>
           <Case condition={value === "tel-num"}>
-            <EmailForm />
+            <PhoneNumberForm />
           </Case>
           <Case condition={value === "telegram"}>
-            <EmailForm />
+            <TelegramForm />
           </Case>
         </Switch>
       </div>

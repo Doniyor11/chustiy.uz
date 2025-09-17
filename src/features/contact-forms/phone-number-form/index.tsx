@@ -2,13 +2,14 @@ import { Button, Flex, Input, Textarea } from "@mantine/core"
 import { useMediaQuery } from "@mantine/hooks"
 import React from "react"
 import { Controller, useForm } from "react-hook-form"
+import { IMaskInput } from "react-imask"
 
 import { useSendMessageQuery } from "@/features/contact-forms/api/query"
-import { IEmailFormTypes } from "@/features/contact-forms/email-form/types"
+import { IPhoneNumberFormTypes } from "@/features/contact-forms/phone-number-form/types.ts"
 
 import s from "../styles.module.scss"
 
-export const EmailForm = () => {
+export const PhoneNumberForm = () => {
   const matches = useMediaQuery("(max-width: 576px)")
 
   const {
@@ -16,21 +17,21 @@ export const EmailForm = () => {
     handleSubmit,
     reset,
     formState: { isDirty, isValid },
-  } = useForm<IEmailFormTypes>()
+  } = useForm<IPhoneNumberFormTypes>()
 
   const { mutate, isPending } = useSendMessageQuery(() => {
     reset({
       fullName: "",
-      email: "",
+      phoneNumber: "",
       message: "",
     })
   })
 
-  const onSubmit = (data: IEmailFormTypes) => {
+  const onSubmit = (data: IPhoneNumberFormTypes) => {
     mutate(
       `<b>Ma’lumot:</b>\n` +
         `<b>Ism:</b> ${data.fullName}\n` +
-        `<b>Email:</b> ${data.email}\n` +
+        `<b>Telefon raqam:</b> ${data.phoneNumber}\n` +
         `<b>Message:</b> ${data.message}\n`,
     )
   }
@@ -53,15 +54,21 @@ export const EmailForm = () => {
         />
 
         <Controller
-          name={"email"}
+          name={"phoneNumber"}
           control={control}
           render={({ field }) => (
-            <Input.Wrapper label={"Email"} className={s.inputWrapper}>
+            <Input.Wrapper label={"Telefon raqam"} className={s.inputWrapper}>
               <Input
                 required
-                type={"email"}
-                placeholder={"E.g name@email.com"}
-                {...field}
+                inputMode="tel"
+                autoComplete="off"
+                value={field.value}
+                component={IMaskInput}
+                mask="+998 00 000 0000"
+                placeholder={"+998 00 000 0000"}
+                onAccept={(value: any) => {
+                  field.onChange?.(value)
+                }}
               />
             </Input.Wrapper>
           )}

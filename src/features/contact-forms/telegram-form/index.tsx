@@ -4,11 +4,11 @@ import React from "react"
 import { Controller, useForm } from "react-hook-form"
 
 import { useSendMessageQuery } from "@/features/contact-forms/api/query"
-import { IEmailFormTypes } from "@/features/contact-forms/email-form/types"
+import { ITelegramFormTypes } from "@/features/contact-forms/telegram-form/types.ts"
 
 import s from "../styles.module.scss"
 
-export const EmailForm = () => {
+export const TelegramForm = () => {
   const matches = useMediaQuery("(max-width: 576px)")
 
   const {
@@ -16,21 +16,21 @@ export const EmailForm = () => {
     handleSubmit,
     reset,
     formState: { isDirty, isValid },
-  } = useForm<IEmailFormTypes>()
+  } = useForm<ITelegramFormTypes>()
 
   const { mutate, isPending } = useSendMessageQuery(() => {
     reset({
       fullName: "",
-      email: "",
+      telegramUsername: "",
       message: "",
     })
   })
 
-  const onSubmit = (data: IEmailFormTypes) => {
+  const onSubmit = (data: ITelegramFormTypes) => {
     mutate(
       `<b>Ma’lumot:</b>\n` +
         `<b>Ism:</b> ${data.fullName}\n` +
-        `<b>Email:</b> ${data.email}\n` +
+        `<b>Username:</b> ${data.telegramUsername}\n` +
         `<b>Message:</b> ${data.message}\n`,
     )
   }
@@ -53,15 +53,23 @@ export const EmailForm = () => {
         />
 
         <Controller
-          name={"email"}
+          name={"telegramUsername"}
           control={control}
           render={({ field }) => (
-            <Input.Wrapper label={"Email"} className={s.inputWrapper}>
+            <Input.Wrapper label={"Username"} className={s.inputWrapper}>
               <Input
                 required
-                type={"email"}
-                placeholder={"E.g name@email.com"}
+                placeholder="@username"
+                minLength={5}
                 {...field}
+                value={field.value}
+                onChange={(e) => {
+                  let v = e.target.value.replace(/[^a-zA-Z0-9_@]/g, "")
+                  if (v.includes("@")) {
+                    v = "@" + v.replace(/@/g, "").replace(/^@+/, "")
+                  }
+                  field.onChange(v)
+                }}
               />
             </Input.Wrapper>
           )}

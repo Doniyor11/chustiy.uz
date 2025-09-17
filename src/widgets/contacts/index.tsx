@@ -2,7 +2,11 @@ import { SegmentedControl, Text } from "@mantine/core"
 import React, { useState } from "react"
 import { Case, Switch } from "react-if"
 
-import { EmailForm } from "@/features/contact-forms"
+import {
+  EmailForm,
+  PhoneNumberForm,
+  TelegramForm,
+} from "@/features/contact-forms"
 
 import s from "./index.module.scss"
 
@@ -39,10 +43,10 @@ export const Contacts = () => {
             <EmailForm />
           </Case>
           <Case condition={value === "tel-num"}>
-            <EmailForm />
+            <PhoneNumberForm />
           </Case>
           <Case condition={value === "telegram"}>
-            <EmailForm />
+            <TelegramForm />
           </Case>
         </Switch>
       </div>

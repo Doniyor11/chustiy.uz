@@ -2,12 +2,15 @@ import { Box, Button, Text } from "@mantine/core"
 import Image from "next/image"
 import React from "react"
 
+import { useFormModalStore } from "@/widgets/form-modal/model"
+
 import IconRight from "@/shared/assets/images/icons/icon-right.svg"
 import ImageOne from "@/shared/assets/images/main-image-2.png"
 
 import s from "./styles.module.scss"
 
 export const FestivalsInfo = () => {
+  const { setOpenModal } = useFormModalStore()
   return (
     <div className={s.sectionWrapper}>
       <div className={s.box}>
@@ -23,7 +26,11 @@ export const FestivalsInfo = () => {
             sifatli xizmat va yuksak mehmondo‘stlik — bizning asosiy
             qadriyatlarimiz.
           </Text>
-          <Button className={"btn-outline"} rightSection={<IconRight />}>
+          <Button
+            className={"btn-outline"}
+            rightSection={<IconRight />}
+            onClick={() => setOpenModal(true)}
+          >
             Ariza qoldirish
           </Button>
         </Box>
@@ -48,7 +55,11 @@ export const FestivalsInfo = () => {
             sifatli xizmat va yuksak mehmondo‘stlik — bizning asosiy
             qadriyatlarimiz.
           </Text>
-          <Button className={"btn-outline"} rightSection={<IconRight />}>
+          <Button
+            className={"btn-outline"}
+            rightSection={<IconRight />}
+            onClick={() => setOpenModal(true)}
+          >
             Ariza qoldirish
           </Button>
         </Box>
