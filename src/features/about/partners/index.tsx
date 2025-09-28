@@ -1,5 +1,3 @@
-"use client"
-
 import { Carousel } from "@mantine/carousel"
 import { Text } from "@mantine/core"
 import { useMediaQuery } from "@mantine/hooks"
