@@ -12,7 +12,7 @@ const BooksPage = () => {
   return (
     <>
       <Head>
-        <title>chustiy.uz - Biz haqimizda </title>
+        <title>chustiy.uz - Kitoblar </title>
       </Head>
       <main className={"container"}>
         <HeadBanner

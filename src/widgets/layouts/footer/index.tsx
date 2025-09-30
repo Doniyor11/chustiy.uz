@@ -6,7 +6,6 @@ import IconInstagram from "@/shared/assets/images/icons/icon-instagram.svg"
 import IconPhone from "@/shared/assets/images/icons/icon-phone.svg"
 import IconEmail from "@/shared/assets/images/icons/icon-sms.svg"
 import IconWhatsapp from "@/shared/assets/images/icons/icon-whatsapp.svg"
-import IconX from "@/shared/assets/images/icons/icon-x.svg"
 import IconYoutube from "@/shared/assets/images/icons/icon-youtube.svg"
 
 import s from "./styles.module.scss"
@@ -69,29 +68,39 @@ export const Footer = () => {
           <Box maw={270} className={s.contactBox}>
             <Text className={s.label}>Biz bilan bog’lanish</Text>
 
-            <Anchor href={"tel:(021) 8272 3922"} className={s.link}>
+            <Anchor href={"tel:+998970950019"} className={s.link}>
               <IconPhone />
-              (021) 8272 3922
+              +998 97 095 00 19
             </Anchor>
-            <Anchor href={"#"} className={s.link}>
+            <Anchor href={"tel:+998901190055"} className={s.link}>
               <IconWhatsapp />
-              0812 3456 7890 (Whatsapp)
+              +998 90 119 00 55 (Whatsapp)
             </Anchor>
-            <Anchor href={"mailto:support@chustiy.id"} className={s.link}>
+            <Anchor href={"mailto:hello@chustiy.com"} className={s.link}>
               <IconEmail />
-              support@chustiy.id
+              hello@chustiy.com
             </Anchor>
             <Flex className={s.socials} align={"center"} gap={20}>
-              <Anchor h={"#"}>
+              <Anchor
+                href={
+                  "https://www.facebook.com/share/16yKMkxjwv/?mibextid=wwXIfr"
+                }
+                target={"_blank"}
+              >
                 <IconFacebook />
               </Anchor>
-              <Anchor h={"#"}>
+              <Anchor
+                href={
+                  "https://www.instagram.com/chustiy.uz?igsh=ZTBpdmZmZnZ6bTEx"
+                }
+                target={"_blank"}
+              >
                 <IconInstagram />
               </Anchor>
-              <Anchor h={"#"}>
-                <IconX />
-              </Anchor>
-              <Anchor h={"#"}>
+              <Anchor
+                href={"https://youtube.com/@ochoqboshida?si=PmltLr8A2nV_9WvX"}
+                target={"_blank"}
+              >
                 <IconYoutube />
               </Anchor>
             </Flex>

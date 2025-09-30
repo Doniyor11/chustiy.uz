@@ -9,7 +9,7 @@ const RecipePage = () => {
   return (
     <>
       <Head>
-        <title>chustiy.uz - Biz haqimizda </title>
+        <title>chustiy.uz - Retseptlar </title>
       </Head>
       <main className={"container"}>
         <HeadBanner

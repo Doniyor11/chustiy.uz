@@ -15,8 +15,8 @@ export const AboutSection = () => {
         </Text>
         <Text className={"section-subtitle"} mb={12}>
           Men — oshpazlikka oshno bo‘lgan, har bir taomni qalbdan his qilib
-          tayyorlaydigan shaxsman. O‘n yildan ortiq tajribam davomida turli
-          oshxonalar bilan ishladim: milliy an’anaviy taomlardan tortib,
+          tayyorlaydigan shaxsman. Yigirma besh yildan ortiq tajribam davomida
+          turli oshxonalar bilan ishladim: milliy an’anaviy taomlardan tortib,
           zamonaviy fusion yo‘nalishlarigacha. Har bir mehmon uchun shaxsiy
           yondashuv va mukammal ta’m — mening ustuvor vazifamdir.
         </Text>

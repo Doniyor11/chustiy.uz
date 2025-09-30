@@ -6,7 +6,6 @@ import React from "react"
 import ImageBook2 from "@/shared/assets/images/book-image-2.png"
 import ImageBook3 from "@/shared/assets/images/book-image-3.png"
 import ImageBook4 from "@/shared/assets/images/book-image-4.png"
-import ImageBook from "@/shared/assets/images/book-image.png"
 import ImageRight from "@/shared/assets/images/icons/icon-right.svg"
 
 import s from "./styles.module.scss"
@@ -31,50 +30,20 @@ export const Books = () => {
       >
         <Carousel.Slide>
           <div className={s.card}>
-            <Image className={s.image} src={ImageBook} alt={"ImageBook"} />
-            <Text>Kitob 1</Text>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
             <Image className={s.image} src={ImageBook2} alt={"ImageBook"} />
-            <Text>Kitob 2</Text>
+            <Text>Quyoshli 365 kun</Text>
           </div>
         </Carousel.Slide>
         <Carousel.Slide>
           <div className={s.card}>
             <Image className={s.image} src={ImageBook3} alt={"ImageBook"} />
-            <Text>Kitob 3</Text>
+            <Text>Non</Text>
           </div>
         </Carousel.Slide>
         <Carousel.Slide>
           <div className={s.card}>
             <Image className={s.image} src={ImageBook4} alt={"ImageBook"} />
-            <Text>Kitob 4</Text>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
-            <Image className={s.image} src={ImageBook2} alt={"ImageBook"} />
-            <Text>Kitob 5</Text>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
-            <Image className={s.image} src={ImageBook3} alt={"ImageBook"} />
-            <Text>Kitob 6</Text>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
-            <Image className={s.image} src={ImageBook} alt={"ImageBook"} />
-            <Text>Kitob 7</Text>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
-            <Image className={s.image} src={ImageBook2} alt={"ImageBook"} />
-            <Text>Kitob 8</Text>
+            <Text>Bolalar taomlari</Text>
           </div>
         </Carousel.Slide>
       </Carousel>

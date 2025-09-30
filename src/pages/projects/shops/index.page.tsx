@@ -14,7 +14,7 @@ const ShopsPage = () => {
   return (
     <>
       <Head>
-        <title>chustiy.uz - Biz haqimizda </title>
+        <title>chustiy.uz - Do’konlar </title>
       </Head>
       <main className={"container"}>
         <HeadBanner
