@@ -50,18 +50,6 @@ export const Books = () => {
             <Text>Kitob 4</Text>
           </div>
         </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
-            <Image className={s.image} src={ImageBook} alt={"ImageBook"} />
-            <Text>Kitob 4</Text>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
-            <Image className={s.image} src={ImageBook} alt={"ImageBook"} />
-            <Text>Kitob 4</Text>
-          </div>
-        </Carousel.Slide>
       </Carousel>
     </div>
   )

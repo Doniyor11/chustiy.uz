@@ -21,10 +21,10 @@ export const ConsultingService = () => {
         <Box className={s.sectionLeft}>
           <Text className={"section-title sm"}>Konsalting xizmati</Text>
           <Text className={"section-subtitle"}>
-            Ko‘p yillik tajribaga ega resterator Bahriddin Chustiy tomonidan
-            ochilgan consulting xizmat — restoran va umumiy ovqatlanish sohasida
-            biznes yaratish, rivojlantirish hamda boshqarishda professional va
-            samarali yechimlar taqdim etadi.
+            Ko‘p yillik tajribaga ega oshpaz va restorator Bahriddin Chustiy
+            tomonidan ochilgan consulting xizmati — restoran va umumiy
+            ovqatlanish sohasida biznes yaratish, rivojlantirish hamda
+            boshqarishda professional va samarali yechimlar taqdim etadi.
           </Text>
           <div className={s.cards}>
             <div className={s.card}>
@@ -83,7 +83,7 @@ export const ConsultingService = () => {
             <b>Bahriddin Chustiy</b> o‘zining oshpazlik faoliyati davomida
             mehmonlarga nafaqat mazali taomlar, balki unutilmas taassurotlar
             taqdim etuvchi restoranlar tarmog‘ini yaratdi.{" "}
-            <b>Oshxona.uz, Chustiy Cuisines, Tez Food, Sal-Sal</b> va{" "}
+            <b>Oshxona.uz, Chustiy Cuisines, Tez Food, Sal-Sal, Parvarda</b> va{" "}
             <b>Aksu</b> restoranlari shaharning turli nuqtalarida mehmonlarni
             doimo ochiq qo‘llar bilan kutib oladi.
           </Text>
