@@ -6,6 +6,7 @@ import React from "react"
 
 import ImageRight from "@/shared/assets/images/icons/icon-right.svg"
 import ImageOne from "@/shared/assets/images/image-chustiy.png"
+import ImageTwo from "@/shared/assets/images/team-image-1.jpg"
 
 import s from "./styles.module.scss"
 
@@ -62,128 +63,13 @@ export const OurStaff = () => {
               className={s.image}
               width={220}
               height={300}
-              src={ImageOne}
+              src={ImageTwo}
               alt={"image-chustiy"}
             />
             <Box className={s.cardRight}>
               <Box>
-                <Text className={s.name}>Ibrohim Rahimberdiyev</Text>
-                <Text className={s.badge}>Asoschi, Shef</Text>
-              </Box>
-              <Text className={s.description}>
-                Ichki tizimlar raqamlashtirildi, biznes jarayonlar
-                avtomatlashtirildi. Biz xizmat ko‘rsatish tezligi va sifatini
-                sezilarli darajada yaxshiladik. Mahsulotlarimiz soni va sifati
-                jihatdan sezilarli yutuqlarga erishildi.
-              </Text>
-            </Box>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
-            <Image
-              className={s.image}
-              width={220}
-              height={300}
-              src={ImageOne}
-              alt={"image-chustiy"}
-            />
-            <Box className={s.cardRight}>
-              <Box>
-                <Text className={s.name}>Ibrohim Rahimberdiyev</Text>
-                <Text className={s.badge}>Asoschi, Shef</Text>
-              </Box>
-              <Text className={s.description}>
-                Ichki tizimlar raqamlashtirildi, biznes jarayonlar
-                avtomatlashtirildi. Biz xizmat ko‘rsatish tezligi va sifatini
-                sezilarli darajada yaxshiladik. Mahsulotlarimiz soni va sifati
-                jihatdan sezilarli yutuqlarga erishildi.
-              </Text>
-            </Box>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
-            <Image
-              className={s.image}
-              width={220}
-              height={300}
-              src={ImageOne}
-              alt={"image-chustiy"}
-            />
-            <Box className={s.cardRight}>
-              <Box>
-                <Text className={s.name}>Ibrohim Rahimberdiyev</Text>
-                <Text className={s.badge}>Asoschi, Shef</Text>
-              </Box>
-              <Text className={s.description}>
-                Ichki tizimlar raqamlashtirildi, biznes jarayonlar
-                avtomatlashtirildi. Biz xizmat ko‘rsatish tezligi va sifatini
-                sezilarli darajada yaxshiladik. Mahsulotlarimiz soni va sifati
-                jihatdan sezilarli yutuqlarga erishildi.
-              </Text>
-            </Box>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
-            <Image
-              className={s.image}
-              width={220}
-              height={300}
-              src={ImageOne}
-              alt={"image-chustiy"}
-            />
-            <Box className={s.cardRight}>
-              <Box>
-                <Text className={s.name}>Ibrohim Rahimberdiyev</Text>
-                <Text className={s.badge}>Asoschi, Shef</Text>
-              </Box>
-              <Text className={s.description}>
-                Ichki tizimlar raqamlashtirildi, biznes jarayonlar
-                avtomatlashtirildi. Biz xizmat ko‘rsatish tezligi va sifatini
-                sezilarli darajada yaxshiladik. Mahsulotlarimiz soni va sifati
-                jihatdan sezilarli yutuqlarga erishildi.
-              </Text>
-            </Box>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
-            <Image
-              className={s.image}
-              width={220}
-              height={300}
-              src={ImageOne}
-              alt={"image-chustiy"}
-            />
-            <Box className={s.cardRight}>
-              <Box>
-                <Text className={s.name}>Ibrohim Rahimberdiyev</Text>
-                <Text className={s.badge}>Asoschi, Shef</Text>
-              </Box>
-              <Text className={s.description}>
-                Ichki tizimlar raqamlashtirildi, biznes jarayonlar
-                avtomatlashtirildi. Biz xizmat ko‘rsatish tezligi va sifatini
-                sezilarli darajada yaxshiladik. Mahsulotlarimiz soni va sifati
-                jihatdan sezilarli yutuqlarga erishildi.
-              </Text>
-            </Box>
-          </div>
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <div className={s.card}>
-            <Image
-              className={s.image}
-              width={220}
-              height={300}
-              src={ImageOne}
-              alt={"image-chustiy"}
-            />
-            <Box className={s.cardRight}>
-              <Box>
-                <Text className={s.name}>Ibrohim Rahimberdiyev</Text>
-                <Text className={s.badge}>Asoschi, Shef</Text>
+                <Text className={s.name}>Bahrom Babahanov</Text>
+                <Text className={s.badge}>Shef</Text>
               </Box>
               <Text className={s.description}>
                 Ichki tizimlar raqamlashtirildi, biznes jarayonlar

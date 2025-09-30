@@ -5,7 +5,7 @@ import { Contacts } from "@/widgets"
 
 import { BooksList, ProjectsInfo } from "@/features/projects"
 
-import ImageOne from "@/shared/assets/images/image-chustiy-2.png"
+import ImageOne from "@/shared/assets/images/image-books-page.png"
 import { HeadBanner } from "@/shared/ui"
 
 const BooksPage = () => {

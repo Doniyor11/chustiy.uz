@@ -5,7 +5,7 @@ import { Contacts } from "@/widgets"
 
 import { MainGallery } from "@/features/main"
 
-import { LocationInfo } from "@/entities"
+import { RestaurantsInfo } from "@/entities"
 
 import { HeadBanner } from "@/shared/ui"
 
@@ -22,7 +22,7 @@ const RestaurantsPage = () => {
             "Men — oshpazlikka oshno bo‘lgan, har bir taomni qalbdan his qilib tayyorlaydigan shaxsman. O‘n yildan ortiq tajribam davomida turli oshxonalar bilan ishladim: milliy an’anaviy taomlardan tortib, zamonaviy fusion yo‘nalishlarigacha. Har bir mehmon uchun shaxsiy yondashuv va mukammal ta’m — mening ustuvor vazifamdir."
           }
         />
-        <LocationInfo />
+        <RestaurantsInfo />
         <MainGallery />
       </main>
       <Contacts />

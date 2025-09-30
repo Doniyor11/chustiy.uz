@@ -9,7 +9,7 @@ import IconGps from "@/shared/assets/images/icons/icon-gps.svg"
 import IconLike from "@/shared/assets/images/icons/icon-like.svg"
 import IconRight from "@/shared/assets/images/icons/icon-right.svg"
 import IconUnlimited from "@/shared/assets/images/icons/icon-unlimited.svg"
-import ImageTwo from "@/shared/assets/images/restaurants-image.png"
+import ImageTwo from "@/shared/assets/images/restaurants-image-2.png"
 
 import s from "./styles.module.scss"
 
