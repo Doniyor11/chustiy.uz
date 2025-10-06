@@ -72,10 +72,11 @@ export const OurStaff = () => {
                 <Text className={s.badge}>Shef</Text>
               </Box>
               <Text className={s.description}>
-                Ichki tizimlar raqamlashtirildi, biznes jarayonlar
-                avtomatlashtirildi. Biz xizmat ko‘rsatish tezligi va sifatini
-                sezilarli darajada yaxshiladik. Mahsulotlarimiz soni va sifati
-                jihatdan sezilarli yutuqlarga erishildi.
+                Bakhrom Babakhanov — tajribali oshpaz bo‘lib, hashamatli
+                gastronomiya va xalqaro mehmondo‘stlik sohasida yillar davomida
+                faoliyat yuritib kelmoqda. U o‘z faoliyati davomida O‘zbekiston,
+                Rossiya, Ukraina va Fransiya kabi mamlakatlarda taniqli
+                restoranlarda ishlagan.
               </Text>
             </Box>
           </div>
