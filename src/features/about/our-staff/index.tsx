@@ -45,7 +45,7 @@ export const OurStaff = () => {
             />
             <Box className={s.cardRight}>
               <Box>
-                <Text className={s.name}>Ibrohim Rahimberdiyev</Text>
+                <Text className={s.name}>Bahriddin Chustiy</Text>
                 <Text className={s.badge}>Asoschi, Shef</Text>
               </Box>
               <Text className={s.description}>
