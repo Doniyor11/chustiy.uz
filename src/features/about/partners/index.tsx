@@ -5,15 +5,14 @@ import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
 import React, { useRef } from "react"
 
-import ImageThree from "@/shared/assets/images/nasa-logo.png"
-import ImageOne from "@/shared/assets/images/mursak-logo.png"
 import ImageTwo from "@/shared/assets/images/image-facebook.png"
+import ImageOne from "@/shared/assets/images/mursak-logo.png"
+import ImageThree from "@/shared/assets/images/nasa-logo.png"
 
 // import ImageThree from "@/shared/assets/images/nasa-logo.png"
 // import ImageOne from "@/shared/assets/images/mursak-logo.png"
 // import ImageTwo from "@/shared/assets/images/Hilton-logo.svg"
 // import ImageFour from "@/shared/assets/images/uzbekistan_travel-logo.png"
-
 import s from "./styles.module.scss"
 
 export const Partners = () => {
@@ -24,7 +23,8 @@ export const Partners = () => {
     <div className={s.sectionWrapper}>
       <Text className={"section-title sm"}>
         <span>Hamkorlar</span>
-        Biz shu kungacha ko'plab mashhur brendlar bilan birgalikda ishlaganmiz va ularga o'z xizmatlarimizni taqdim qilganmiz
+        Biz shu kungacha ko'plab mashhur brendlar bilan birgalikda ishlaganmiz
+        va ularga o'z xizmatlarimizni taqdim qilganmiz
       </Text>
 
       <Carousel

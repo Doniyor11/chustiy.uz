@@ -3,10 +3,10 @@ import { Text } from "@mantine/core"
 import Image from "next/image"
 import React from "react"
 
-import ImageBook2 from "@/shared/assets/images/quyoshli_365_kun.jpg"
-import ImageBook3 from "@/shared/assets/images/book-image-3.png"
 import ImageBook4 from "@/shared/assets/images/aqlvoy_oshpaz.jpg"
+import ImageBook3 from "@/shared/assets/images/book-image-3.png"
 import ImageRight from "@/shared/assets/images/icons/icon-right.svg"
+import ImageBook2 from "@/shared/assets/images/quyoshli_365_kun.jpg"
 
 import s from "./styles.module.scss"
 

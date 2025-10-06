@@ -52,9 +52,9 @@ export const OurStaff = () => {
                 Bahriddin Chustiy 2017-yil 8-sentabrda „Oʻzbegim milliy
                 anʼanalari“ festivali doirasida tayyorlangan va Ginnesning
                 rekordlar kitobiga kiritilgan „Mega palov“ loyihasi
-                tashabbuskorlaridan biri. Kun.uz nashriga bergan
-                intervyusida mazkur loyiha uchun tayyorgarlik jarayonlari
-                2010—2011-yillardan boshlanganini maʼlum qilgan.
+                tashabbuskorlaridan biri. Kun.uz nashriga bergan intervyusida
+                mazkur loyiha uchun tayyorgarlik jarayonlari 2010—2011-yillardan
+                boshlanganini maʼlum qilgan.
               </Text>
             </Box>
           </div>
