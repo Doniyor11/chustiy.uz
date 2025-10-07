@@ -17,7 +17,7 @@ export const OurHistory = () => {
   return (
     <div className={s.sectionWrapper}>
       <Text className={"section-title sm"}>
-        Tarixga nazar solamiz. O’tmishdan hozirgi vaqtgacha qilgan ishlarimiz
+        Tarixga nazar solamiz. Oxirgi 5 yil ichida qilgan loyihalarimiz!
       </Text>
       <div className={s.timelineWrapper}>
         <Timeline
@@ -41,41 +41,31 @@ export const OurHistory = () => {
         <div className={s.boxes}>
           <div className={cx(s.box, s.active)}>
             <div data-aos="fade-right" className={s.texts}>
-              <Text className={s.year}>2020</Text>
-              <Text className={s.title}>Texnologik yuksalish</Text>
-            </div>
-            <Text data-aos="fade-left" className={s.description}>
-              Dunyo pandemiya bilan kurashayotgan bir paytda, biz raqamli
-              yechimlarga bo‘lgan talab ortganini sezib, masofaviy xizmat
-              ko‘rsatishni rivojlantirdik. Yangi mahsulotlar yaratildi va bir
-              nechta muhim hamkorliklar yo‘lga qo‘yildi.
-            </Text>
-          </div>
-          <div className={cx(s.box)}>
-            <div data-aos="fade-right" className={s.texts}>
               <Text className={s.year}>2021</Text>
               <Text className={s.title}>
-                Innovatsiyalar va yangi yo‘nalishlar
+                {" "}
+                Dubay "Ekspo-2020"da tayyorlangan 1000 kg mega palov
               </Text>
             </div>
             <Text data-aos="fade-left" className={s.description}>
-              Bu yil innovatsiyalarga katta urg‘u berildi. Sun’iy intellekt va
-              avtomatlashtirish yo‘nalishlarida ishlay boshladik. Mijozlarga
-              taqdim etilayotgan xizmatlar sifat jihatdan yangi bosqichga
-              ko‘tarildi.
+              2021-yilda Dubayda oʻtkazilgan "Ekspo-2020" butunjahon
+              koʻrgazmasida Oʻzbekiston kuni doirasida 1000 kilogramlik mega
+              palov tayyorlagan
             </Text>
           </div>
           <div className={cx(s.box)}>
             <div data-aos="fade-right" className={s.texts}>
               <Text className={s.year}>2022</Text>
               <Text className={s.title}>
-                Muvaffaqiyatli loyihalar va kengayish
+                Donald Lu bilan tayyorlangan palov
               </Text>
             </div>
             <Text data-aos="fade-left" className={s.description}>
-              Yirik korxona va tashkilotlar bilan hamkorlik qilgan holda, bir
-              nechta muvaffaqiyatli loyihalar hayotga tatbiq etildi.
-              Kompaniyamiz tarkibi kengayib, yangi ofis ochildi.
+              O‘zbekiston palovsiz taom emas: Janubiy va Markaziy Osiyo ishlari
+              bo‘yicha vazir yordamchisi Donald Lu dunyoga mashhur oshpaz
+              Bahriddin Chustiy bilan sevimli milliy taomni tayyorladi. Yaxshi
+              taom va an’analarni baham ko‘rish bizni -- amerikaliklar va
+              o‘zbekistonliklarni -- birlashtiradi!
             </Text>
           </div>
           <div className={cx(s.box)}>
@@ -84,36 +74,46 @@ export const OurHistory = () => {
               <Text className={s.title}>Mahalliydan globalga</Text>
             </div>
             <Text data-aos="fade-left" className={s.description}>
-              Bizning xizmatlarimiz nafaqat O‘zbekiston bozorida, balki xalqaro
-              darajada ham talab qilina boshladi. Tashqi hamkorlar bilan ishlash
-              tajribasi ortdi, eksport salohiyati oshdi.
+              2023-yilning 17-18-iyun kunlari Londondagi Potters Fields bog‘ida
+              O‘zbekiston madaniyati va taomlari festivali 2023 bo‘lib o‘tdi,
+              unda 2000kg osh tayyorlandi, o‘zbek madaniyati, oshxonasi va
+              hunarmandchiligi keng auditoriyaga namoyish etildi.
             </Text>
           </div>
           <div className={cx(s.box)}>
             <div data-aos="fade-right" className={s.texts}>
               <Text className={s.year}>2024</Text>
-              <Text className={s.title}>
-                Transformatsiya va raqamli o‘zgarishlar
-              </Text>
+              <Text className={s.title}>Uzbek Culture and Food Festival</Text>
             </div>
             <Text data-aos="fade-left" className={s.description}>
-              Ichki tizimlar raqamlashtirildi, biznes jarayonlar
-              avtomatlashtirildi. Biz xizmat ko‘rsatish tezligi va sifatini
-              sezilarli darajada yaxshiladik. Mahsulotlarimiz soni va sifati
-              jihatdan sezilarli yutuqlarga erishildi.
+              2024-yilning 8-9-iyun kunlari Londondagi Tower Bridge ko'prigi
+              oldida O‘zbekiston madaniyati va taomlari festivali 2024 bo‘lib
+              o‘tdi, unda 2000kg osh tayyorlandi, o‘zbek madaniyati, oshxonasi
+              va hunarmandchiligi keng auditoriyaga namoyish etildi.
             </Text>
           </div>
           <div className={cx(s.box)}>
             <div data-aos="fade-right" className={s.texts}>
               <Text className={s.year}>2025</Text>
-              <Text className={s.title}>Yetakchilik sari dadil qadamlar</Text>
+              <Text className={s.title}>Caravan of Uzbekistan loyihasi</Text>
             </div>
             <Text data-aos="fade-left" className={s.description}>
-              Bugun biz yurtimizdagi ilg‘or IT kompaniyalaridan biriga
-              aylanganmiz. Yangi avlod texnologiyalariga asoslangan yechimlar,
-              zamonaviy mahsulotlar va kuchli jamoa bizni kelajak sari
-              ilhomlantirmoqda. Biz nafaqat xizmat ko‘rsatamiz, balki sanoatni
-              o‘zgartirayotgan kuchga aylanyapmiz.
+              Turizm sohasini rivojlantirish va xalqaro sayyohlarda katta
+              qiziqish uyg‘otish maqsadida O‘zbekiston Turizm qo‘mitasi va
+              "Chustiy Group" kompaniyasi tomonidan 5-17 iyun kunlari Buyuk
+              Britaniyaning 6 ta yirik shahrida "O‘zbekiston karvoni" nomli
+              madaniy-gastronomik sayohat tashkil etildi.
+            </Text>
+          </div>
+          <div className={cx(s.box)}>
+            <div data-aos="fade-right" className={s.texts}>
+              <Text className={s.year}>2025</Text>
+              <Text className={s.title}>Yangi loyiha "Parvarda"</Text>
+            </div>
+            <Text data-aos="fade-left" className={s.description}>
+              Bahriddin Chustiy boshchiligada Toshkentning markaziy
+              ko'chalaridan birida, ilk bor o'zbek milliy shirinliklari
+              qahvaxonasi ochilmoqda, va "Parvarda" deb nomlanadi!
             </Text>
           </div>
         </div>

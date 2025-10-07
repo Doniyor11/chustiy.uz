@@ -45,14 +45,16 @@ export const OurStaff = () => {
             />
             <Box className={s.cardRight}>
               <Box>
-                <Text className={s.name}>Ibrohim Rahimberdiyev</Text>
+                <Text className={s.name}>Bahriddin Chustiy</Text>
                 <Text className={s.badge}>Asoschi, Shef</Text>
               </Box>
               <Text className={s.description}>
-                Ichki tizimlar raqamlashtirildi, biznes jarayonlar
-                avtomatlashtirildi. Biz xizmat ko‘rsatish tezligi va sifatini
-                sezilarli darajada yaxshiladik. Mahsulotlarimiz soni va sifati
-                jihatdan sezilarli yutuqlarga erishildi.
+                Bahriddin Chustiy 2017-yil 8-sentabrda „Oʻzbegim milliy
+                anʼanalari“ festivali doirasida tayyorlangan va Ginnesning
+                rekordlar kitobiga kiritilgan „Mega palov“ loyihasi
+                tashabbuskorlaridan biri. Kun.uz nashriga bergan intervyusida
+                mazkur loyiha uchun tayyorgarlik jarayonlari 2010—2011-yillardan
+                boshlanganini maʼlum qilgan.
               </Text>
             </Box>
           </div>
@@ -72,10 +74,11 @@ export const OurStaff = () => {
                 <Text className={s.badge}>Shef</Text>
               </Box>
               <Text className={s.description}>
-                Ichki tizimlar raqamlashtirildi, biznes jarayonlar
-                avtomatlashtirildi. Biz xizmat ko‘rsatish tezligi va sifatini
-                sezilarli darajada yaxshiladik. Mahsulotlarimiz soni va sifati
-                jihatdan sezilarli yutuqlarga erishildi.
+                Bakhrom Babakhanov — tajribali oshpaz bo‘lib, hashamatli
+                gastronomiya va xalqaro mehmondo‘stlik sohasida yillar davomida
+                faoliyat yuritib kelmoqda. U o‘z faoliyati davomida O‘zbekiston,
+                Rossiya, Ukraina va Fransiya kabi mamlakatlarda taniqli
+                restoranlarda ishlagan.
               </Text>
             </Box>
           </div>

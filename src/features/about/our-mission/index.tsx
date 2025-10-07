@@ -37,32 +37,32 @@ export const OurMission = () => {
                 Sifatdan hech qachon chekinmaymiz
               </Text>
               <Text className={s.cardSubtitle}>
-                Silvero products are made from premium materials for lasting
-                durability and performance.
+                Har bir detalda mukammallik. Chunki sifatdan hech qachon
+                chekinmaymiz.
               </Text>
             </div>
             <div className={s.card}>
               <IconClock />
               <Text className={s.cardTitle}>Vaqt sinovidan o‘tgan</Text>
               <Text className={s.cardSubtitle}>
-                Our collection is thoughtfully designed to complement both
-                modern and classic kitchens.
+                Vaqt sinovidan o‘tgan mukammallik — har bir loyihamizda aks
+                etadi.
               </Text>
             </div>
             <div className={s.card}>
               <IconBlur />
               <Text className={s.cardTitle}>Barqaror rivojlanish</Text>
               <Text className={s.cardSubtitle}>
-                We’re committed to eco-friendly practices, using recyclable
-                materials and ethical processes.
+                Doimiy o‘sish, yangilanish va mukammallikka intilish — barqaror
+                rivojlanish yo‘limiz
               </Text>
             </div>
             <div className={s.card}>
               <IconEmoji />
               <Text className={s.cardTitle}>Mijozlarga g‘amxo‘rlik</Text>
               <Text className={s.cardSubtitle}>
-                Ensuring satisfaction with thoughtful designs and exceptional
-                service.
+                Biz nafaqat xizmat ko‘rsatamiz, balki har bir mijoz ehtiyojiga
+                samimiy e’tibor beramiz.
               </Text>
             </div>
           </div>
