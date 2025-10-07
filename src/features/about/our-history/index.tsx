@@ -112,8 +112,8 @@ export const OurHistory = () => {
             </div>
             <Text data-aos="fade-left" className={s.description}>
               Bahriddin Chustiy boshchiligada Toshkentning markaziy
-              ko'chalaridan birida, ilk bor o'zbek milliy shirinliklari qahvaxonasi
-              ochilmoqda, va "Parvarda" deb nomlanadi!
+              ko'chalaridan birida, ilk bor o'zbek milliy shirinliklari
+              qahvaxonasi ochilmoqda, va "Parvarda" deb nomlanadi!
             </Text>
           </div>
         </div>

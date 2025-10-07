@@ -109,7 +109,10 @@ export const Footer = () => {
       </div>
       <Flex className={s.bottomTexts}>
         <Text>© 2025 Chustiy. All rights reserved worldwide</Text>
-        <Text>Powered by <Link href={'https://www.qalam.agency/'}>Qalam Agency</Link></Text>
+        <Text>
+          Powered by{" "}
+          <Link href={"https://www.qalam.agency/"}>Qalam Agency</Link>
+        </Text>
       </Flex>
     </div>
   )
