@@ -7,6 +7,7 @@ import ImageBook4 from "@/shared/assets/images/aqlvoy_oshpaz.jpg"
 import ImageBook3 from "@/shared/assets/images/book-image-3.png"
 import ImageRight from "@/shared/assets/images/icons/icon-right.svg"
 import ImageBook2 from "@/shared/assets/images/quyoshli_365_kun.jpg"
+import ImageBook5 from "@/shared/assets/images/o'zbek_book.png"
 
 import s from "./styles.module.scss"
 
@@ -30,20 +31,26 @@ export const Books = () => {
       >
         <Carousel.Slide>
           <div className={s.card}>
-            <Image className={s.image} src={ImageBook2} alt={"ImageBook"} />
+            <Image className={s.image} src={ImageBook2} alt={"Quyoshli 365 kun - Bahriddin chustiy"} />
             <Text>Quyoshli 365 kun</Text>
           </div>
         </Carousel.Slide>
         <Carousel.Slide>
           <div className={s.card}>
-            <Image className={s.image} src={ImageBook3} alt={"ImageBook"} />
+            <Image className={s.image} src={ImageBook3} alt={"Non - Bahriddin chustiy"} />
             <Text>Non</Text>
           </div>
         </Carousel.Slide>
         <Carousel.Slide>
           <div className={s.card}>
-            <Image className={s.image} src={ImageBook4} alt={"ImageBook"} />
+            <Image className={s.image} src={ImageBook4} alt={"Bolalar taomlari - Bahriddin chustiy"} />
             <Text>Bolalar taomlari</Text>
+          </div>
+        </Carousel.Slide>
+        <Carousel.Slide>
+          <div className={s.card}>
+            <Image className={s.image} src={ImageBook5} alt={"O'zbegim - Bahriddin chustiy"} />
+            <Text>O'zbegim</Text>
           </div>
         </Carousel.Slide>
       </Carousel>

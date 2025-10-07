@@ -5,7 +5,6 @@ import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
 import React, { useRef } from "react"
 
-import ImageTwo from "@/shared/assets/images/image-facebook.png"
 import ImageOne from "@/shared/assets/images/mursak-logo.png"
 import ImageThree from "@/shared/assets/images/nasa-logo.png"
 
@@ -18,7 +17,7 @@ import s from "./styles.module.scss"
 export const Partners = () => {
   const matches = useMediaQuery("(max-width: 576px)")
 
-  const autoplay = useRef(Autoplay({ delay: 700, stopOnInteraction: false }))
+  const autoplay = useRef(Autoplay({ delay: 1500, stopOnInteraction: false }))
   return (
     <div className={s.sectionWrapper}>
       <Text className={"section-title sm"}>
@@ -41,7 +40,10 @@ export const Partners = () => {
           <Image src={ImageOne} alt="ImageOne" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
-          <Image src={ImageTwo} alt="ImageTwo" className={s.image} />
+          <Image src={ImageThree} alt="ImageThree" className={s.image} />
+        </Carousel.Slide>
+        <Carousel.Slide>
+          <Image src={ImageOne} alt="ImageOne" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
           <Image src={ImageThree} alt="ImageThree" className={s.image} />
@@ -50,34 +52,16 @@ export const Partners = () => {
           <Image src={ImageOne} alt="ImageOne" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
-          <Image src={ImageTwo} alt="ImageTwo" className={s.image} />
-        </Carousel.Slide>
-        <Carousel.Slide>
           <Image src={ImageThree} alt="ImageThree" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
           <Image src={ImageOne} alt="ImageOne" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
-          <Image src={ImageTwo} alt="ImageTwo" className={s.image} />
-        </Carousel.Slide>
-        <Carousel.Slide>
           <Image src={ImageThree} alt="ImageThree" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
           <Image src={ImageOne} alt="ImageOne" className={s.image} />
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <Image src={ImageTwo} alt="ImageTwo" className={s.image} />
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <Image src={ImageThree} alt="ImageThree" className={s.image} />
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <Image src={ImageOne} alt="ImageOne" className={s.image} />
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <Image src={ImageTwo} alt="ImageTwo" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
           <Image src={ImageThree} alt="ImageThree" className={s.image} />
