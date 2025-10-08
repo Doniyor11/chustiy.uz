@@ -15,7 +15,7 @@ import ImageFour from "@/shared/assets/images/Uzbekistan_Turizm.png"
 import s from "./styles.module.scss"
 
 export const Partners = () => {
-  const matches = useMediaQuery("(max-width: 576px)")
+  const matches = useMediaQuery("(max-width: 992px)")
 
   const autoplay = useRef(Autoplay({ delay: 1500, stopOnInteraction: false }))
   return (

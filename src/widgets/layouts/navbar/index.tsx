@@ -25,7 +25,7 @@ export const Navbar = () => {
   const router = useRouter()
   const [isOpen, setIsOpen] = useState(false)
   const [childMenu, setChildMenu] = useState<string>("")
-  const matches = useMediaQuery("(max-width: 576px)")
+  const matches = useMediaQuery("(max-width: 992px)")
   return (
     <>
       <div className={cx(s.navbarWrapper, "container")}>

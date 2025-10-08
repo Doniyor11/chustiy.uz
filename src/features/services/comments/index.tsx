@@ -13,7 +13,7 @@ import ImageRight from "@/shared/assets/images/icons/icon-right.svg"
 import s from "./styles.module.scss"
 
 export const Comments = () => {
-  const matches = useMediaQuery("(max-width: 576px)")
+  const matches = useMediaQuery("(max-width: 992px)")
 
   return (
     <div className={s.sectionWrapper}>

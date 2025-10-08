@@ -11,7 +11,7 @@ import IconWhatsapp from "@/shared/assets/images/icons/icon-whatsapp.svg"
 import s from "./styles.module.scss"
 
 export const FestivalsList = () => {
-  const matches = useMediaQuery("(max-width: 576px)")
+  const matches = useMediaQuery("(max-width: 992px)")
 
   return (
     <div className={s.sectionWrapper}>

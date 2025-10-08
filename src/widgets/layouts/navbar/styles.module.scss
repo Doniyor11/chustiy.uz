@@ -9,7 +9,6 @@
   justify-content: space-between;
 
   .logo {
-    @include font-taviraj;
     color: #111827;
     font-size: 30px;
     font-weight: 500;
@@ -149,7 +148,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .navbarWrapper {
     height: 80px;
     padding: 12px 16px;

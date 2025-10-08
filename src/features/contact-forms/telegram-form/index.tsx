@@ -9,7 +9,7 @@ import { ITelegramFormTypes } from "@/features/contact-forms/telegram-form/types
 import s from "../styles.module.scss"
 
 export const TelegramForm = () => {
-  const matches = useMediaQuery("(max-width: 576px)")
+  const matches = useMediaQuery("(max-width: 9926px)")
 
   const {
     control,

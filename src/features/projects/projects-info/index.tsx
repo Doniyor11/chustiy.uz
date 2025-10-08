@@ -13,17 +13,22 @@ interface IProps {
 export const ProjectsInfo: FC<IProps> = ({ description, title, image }) => {
   return (
     <div className={s.sectionWrapper}>
-      <Box>
+      <Box w={"50%"}>
         <Text className={"section-title"}>{title}</Text>
-        <Text className={"section-subtitle"}>{description}</Text>
+        <Text
+          className={"section-subtitle"}
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
       </Box>
-      <Image
-        src={image}
-        alt={"image-chustiy"}
-        className={s.image}
-        width={642}
-        height={428}
-      />
+      <Box w={"50%"}>
+        <Image
+          src={image}
+          alt={"image-chustiy"}
+          className={s.image}
+          width={642}
+          height={428}
+        />
+      </Box>
     </div>
   )
 }

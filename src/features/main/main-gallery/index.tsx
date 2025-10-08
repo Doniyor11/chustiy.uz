@@ -22,7 +22,7 @@ import s from "./styles.module.scss"
 
 export const MainGallery = () => {
   const router = useRouter()
-  const matches = useMediaQuery("(max-width: 576px)")
+  const matches = useMediaQuery("(max-width: 992px)")
 
   const autoplay = useRef(Autoplay({ delay: 700, stopOnInteraction: false }))
   return (

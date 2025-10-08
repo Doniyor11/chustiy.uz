@@ -1,6 +1,6 @@
-import { Box, Button, Text } from "@mantine/core"
+import {Box, Button, Text} from "@mantine/core"
 import Image from "next/image"
-import { useRouter } from "next/router"
+import {useRouter} from "next/router"
 import React from "react"
 
 import IconRight from "@/shared/assets/images/icons/icon-right.svg"
@@ -9,37 +9,35 @@ import ImageRestaurants from "@/shared/assets/images/restaurants-image.png"
 import s from "./styles.module.scss"
 
 export const MainMarkets = () => {
-  const router = useRouter()
-  return (
-    <>
-      <div className={s.sectionWrapper}>
-        <Box className={s.sectionLeft}>
-          <Text className={"section-title sm"}>Do’konlar</Text>
-          <Text className={"section-subtitle"}>
-            Bahriddin Chustiy HoReCa sohasi uchun maxsus kiyim-kechak
-            do‘konlarini tashkil etilgan, bu yerda restoran, kafe va
-            mehmonxonalarda xizmat ko‘rsatuvchi xodimlar uchun zamonaviy va
-            qulay uniformalar taqdim etiladi. Har bir libos nafaqat sifat va
-            dizayni bilan, balki amaliy qulayligi bilan ham ajralib turadi. Siz
-            ham ushbu do‘konlar bilan tanishib, jamoangiz uchun eng maqbul va
-            zamonaviy uslubdagi kiyimlarni tanlashingiz mumkin.
-          </Text>
-          <Button
-            onClick={() => router.push("/projects/shops")}
-            className={"btn-outline"}
-            rightSection={<IconRight />}
-          >
-            Batafsil
-          </Button>
-        </Box>
-        <Image
-          src={ImageRestaurants}
-          alt={"ImageRestaurants"}
-          width={555}
-          height={555}
-          className={s.image}
-        />
-      </div>
-    </>
-  )
+    const router = useRouter()
+    return (
+        <>
+            <div className={s.sectionWrapper}>
+                <Box className={s.sectionLeft}>
+                    <Text className={"section-title sm"}>Do’konlar</Text>
+                    <Text className={"section-subtitle"}>
+                        Men 25 yildan ortiq oshpazlik va restoran sohasida faoliyat yuritib kelaman, shu kungacha yuzlab
+                        tadbirlarni o'tkazganman, va tajribamdan kelib chiqgan holda aytamanki HoReCa yo'nalishida
+                        ishlaydigan har bir xodimning ko'rinishi va ustidagi kiyimi juda ham muhim, ko'p yillar davomida
+                        kiyim tiktirish biz uchun ozmi ko'pmi muammollar tug'dirgan shuning uchun o'zimizning "Zapara"
+                        brendimizga asos soldik!
+                    </Text>
+                    <Button
+                        onClick={() => router.push("/projects/shops")}
+                        className={"btn-outline"}
+                        rightSection={<IconRight/>}
+                    >
+                        Batafsil
+                    </Button>
+                </Box>
+                <Image
+                    src={ImageRestaurants}
+                    alt={"ImageRestaurants"}
+                    width={555}
+                    height={555}
+                    className={s.image}
+                />
+            </div>
+        </>
+    )
 }

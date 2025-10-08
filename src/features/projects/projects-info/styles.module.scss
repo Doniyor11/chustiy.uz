@@ -15,11 +15,15 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .sectionWrapper {
     flex-direction: column;
     gap: 18px;
     margin-top: 40px;
+
+    & > div {
+      width: 100% !important;
+    }
 
     .image {
       max-width: 100%;

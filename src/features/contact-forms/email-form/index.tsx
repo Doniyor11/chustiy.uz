@@ -9,7 +9,7 @@ import { IEmailFormTypes } from "@/features/contact-forms/email-form/types"
 import s from "../styles.module.scss"
 
 export const EmailForm = () => {
-  const matches = useMediaQuery("(max-width: 576px)")
+  const matches = useMediaQuery("(max-width: 992px)")
 
   const {
     control,

@@ -10,7 +10,7 @@ import { IPhoneNumberFormTypes } from "@/features/contact-forms/phone-number-for
 import s from "../styles.module.scss"
 
 export const PhoneNumberForm = () => {
-  const matches = useMediaQuery("(max-width: 576px)")
+  const matches = useMediaQuery("(max-width: 992px)")
 
   const {
     control,
