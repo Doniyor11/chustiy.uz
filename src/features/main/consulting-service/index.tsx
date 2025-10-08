@@ -90,7 +90,7 @@ export const ConsultingService = () => {
           <Button
             className={"btn-outline"}
             rightSection={<IconRight />}
-            onClick={() => router.push("/contacts")}
+            onClick={() => router.push("/restaurants")}
           >
             Batafsil
           </Button>
