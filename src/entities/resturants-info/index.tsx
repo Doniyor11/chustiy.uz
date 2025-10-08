@@ -3,10 +3,10 @@ import Image from "next/image"
 import React from "react"
 
 import IconDown from "@/shared/assets/images/icon-chevron-down-xl.svg"
-// import IconFacebook from "@/shared/assets/images/icons/icon-facebook.svg"
+import IconFacebook from "@/shared/assets/images/icons/icon-facebook.svg"
 import IconInstagram from "@/shared/assets/images/icons/icon-instagram.svg"
 import IconPhone from "@/shared/assets/images/icons/icon-phone.svg"
-// import IconEmail from "@/shared/assets/images/icons/icon-sms.svg"
+import IconEmail from "@/shared/assets/images/icons/icon-sms.svg"
 // import IconWhatsapp from "@/shared/assets/images/icons/icon-whatsapp.svg"
 // import IconX from "@/shared/assets/images/icons/icon-x.svg"
 // import IconYoutube from "@/shared/assets/images/icons/icon-youtube.svg"
@@ -14,6 +14,7 @@ import ImageRestaurants2 from "@/shared/assets/images/restaurants-image-3.jpg"
 import ImageRestaurants3 from "@/shared/assets/images/parvarda-oshxona.jpg"
 
 import s from "./styles.module.scss"
+import Link from "next/link";
 
 export const RestaurantsInfo = () => {
     return (
@@ -27,43 +28,35 @@ export const RestaurantsInfo = () => {
                         <Text className={"section-title sm"}>Parvarda</Text>
                         <div className={s.descriptionWrapper}>
                             <Text className={s.descriptionTarget}>
-                                Parvarda Oshxonasi <IconDown/>
+                                Parvarda pastry<IconDown/>
                             </Text>
                             <Collapse in={true}>
                                 <Text className={s.text}>
-                                    Jarayonda
+                                    O'zbek milliy shirinliklari, tez kunda Toshkentning markazi bo'lgan C1 da ochiladi
+                                    va mehmonlarni qabul qilishni boshlaydi, Loyiha muallifi Bahriddin Chustiy va chef
+                                    Yahyo Allamov
                                 </Text>
                             </Collapse>
                         </div>
                         <Box className={s.contactBox}>
                             <Text className={s.label}>Biz bilan aloqa</Text>
 
-                            <Anchor href={"tel:+998970950019"} className={s.link}>
+                            <Link href={"tel:+998333099995"} className={s.link}>
                                 <IconPhone/>
-                                +998 97 095 00 19
-                            </Anchor>
-                            {/*<Anchor href={"#"} className={s.link}>*/}
-                            {/*    <IconWhatsapp/>*/}
-                            {/*    0812 3456 7890 (Whatsapp)*/}
-                            {/*</Anchor>*/}
-                            {/*<Anchor href={"mailto:support@chustiy.id"} className={s.link}>*/}
-                            {/*    <IconEmail/>*/}
-                            {/*    support@chustiy.id*/}
-                            {/*</Anchor>*/}
-                            {/*<Flex className={s.socials} align={"center"} gap={20}>*/}
-                            {/*    <Anchor h={"#"}>*/}
-                            {/*        <IconFacebook/>*/}
-                            {/*    </Anchor>*/}
-                            {/*    <Anchor h={"#"}>*/}
-                            {/*        <IconInstagram/>*/}
-                            {/*    </Anchor>*/}
-                            {/*    <Anchor h={"#"}>*/}
-                            {/*        <IconX/>*/}
-                            {/*    </Anchor>*/}
-                            {/*    <Anchor h={"#"}>*/}
-                            {/*        <IconYoutube/>*/}
-                            {/*    </Anchor>*/}
-                            {/*</Flex>*/}
+                                +998 33 309 99 95
+                            </Link>
+                            <Link href={"info@parvarda.uz"} className={s.link}>
+                                <IconEmail/>
+                                info@parvarda.uz
+                            </Link>
+                            <Flex className={s.socials} align={"center"} gap={20}>
+                                <Link href={"https://www.facebook.com/par.var.da.pastry"}>
+                                    <IconFacebook/>
+                                </Link>
+                                <Link href={"https://www.instagram.com/parvarda_pastry?igsh=MTN1cmZob28wMmRoMg=="}>
+                                    <IconInstagram/>
+                                </Link>
+                            </Flex>
                         </Box>
                     </div>
                 </div>
@@ -90,23 +83,19 @@ export const RestaurantsInfo = () => {
 
                             <Anchor href={"tel:+998 71 209 33 22"} className={s.link}>
                                 <IconPhone/>
-                                +998 71 209 33 22
+                                +998 55 518 33 22
                             </Anchor>
-                            {/*<Anchor href={"#"} className={s.link}>*/}
-                            {/*  <IconWhatsapp />*/}
-                            {/*  0812 3456 7890 (Whatsapp)*/}
-                            {/*</Anchor>*/}
-                            {/*<Anchor href={"mailto:support@chustiy.id"} className={s.link}>*/}
-                            {/*  <IconEmail />*/}
-                            {/*  support@chustiy.id*/}
-                            {/*</Anchor>*/}
+                            <Anchor href={"mailto:support@chustiy.id"} className={s.link}>
+                                <IconEmail/>
+                                info@uzaksu.uz
+                            </Anchor>
                             <Flex className={s.socials} align={"center"} gap={20}>
-                                {/*<Anchor h={"#"}>*/}
-                                {/*  <IconFacebook />*/}
-                                {/*</Anchor>*/}
-                                <Anchor h={"https://www.instagram.com/aksu.uz/"}>
+                                <Link href={"https://www.facebook.com/AksubyChustiy"}>
+                                    <IconFacebook/>
+                                </Link>
+                                <Link href={"https://www.instagram.com/aksu.uz/"}>
                                     <IconInstagram/>
-                                </Anchor>
+                                </Link>
                                 {/*<Anchor h={"#"}>*/}
                                 {/*  <IconX />*/}
                                 {/*</Anchor>*/}
