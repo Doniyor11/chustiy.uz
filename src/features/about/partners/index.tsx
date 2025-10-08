@@ -5,13 +5,12 @@ import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
 import React, { useRef } from "react"
 
-import ImageSeven from "@/shared/assets/images/mursak-logo.png"
 import ImageSex from "@/shared/assets/images/nasa-logo.png"
 import ImageFive from "@/shared/assets/images/artel_logo.png"
 import ImageThree from "@/shared/assets/images/nasa-logo.png"
 import ImageOne from "@/shared/assets/images/mursak-logo.png"
-import ImageTwo from "@/shared/assets/images/Hilton-logo.svg"
-import ImageFour from "@/shared/assets/images/uzbekistan_travel-logo.png"
+import ImageTwo from "@/shared/assets/images/Hilton-logo.png"
+import ImageFour from "@/shared/assets/images/Uzbekistan_Turizm.png"
 import s from "./styles.module.scss"
 
 export const Partners = () => {
@@ -27,7 +26,7 @@ export const Partners = () => {
       </Text>
 
       <Carousel
-        loop
+        loop={true}
         align="start"
         withControls={false}
         slideGap={matches ? 12 : 20}
@@ -37,25 +36,22 @@ export const Partners = () => {
         onMouseLeave={autoplay.current.reset}
       >
         <Carousel.Slide>
-          <Image src={ImageOne} alt="1" className={s.image} />
+          <Image src={ImageOne} alt="Mursak" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
-          <Image src={ImageTwo} alt="2" className={s.image} />
+          <Image src={ImageTwo} alt="Hilton" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
-          <Image src={ImageThree} alt="3" className={s.image} />
+          <Image src={ImageThree} alt="Nasa" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
-          <Image src={ImageFour} alt="4" className={s.image} />
+          <Image src={ImageFour} alt="Uzbekistan Turizm" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
-          <Image src={ImageFive} alt="5" className={s.image} />
+          <Image src={ImageFive} alt="Artel" className={s.image} />
         </Carousel.Slide>
         <Carousel.Slide>
           <Image src={ImageSex} alt="6" className={s.image} />
-        </Carousel.Slide>
-        <Carousel.Slide>
-          <Image src={ImageSeven} alt="7" className={s.image} />
         </Carousel.Slide>
       </Carousel>
     </div>
