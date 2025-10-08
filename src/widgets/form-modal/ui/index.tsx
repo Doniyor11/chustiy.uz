@@ -29,6 +29,7 @@ export const FormModal = () => {
       }}
     >
       <SegmentedControl
+        w={"100%"}
         value={value}
         onChange={setValue}
         className={s.controlRoot}
@@ -43,6 +44,7 @@ export const FormModal = () => {
           { label: "Telegram", value: "telegram" },
         ]}
       />
+
       <Switch>
         <Case condition={value === "email"}>
           <EmailForm />
