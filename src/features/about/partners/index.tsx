@@ -5,12 +5,13 @@ import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
 import React, { useRef } from "react"
 
-import ImageSex from "@/shared/assets/images/nasa-logo.png"
 import ImageFive from "@/shared/assets/images/artel_logo.png"
-import ImageThree from "@/shared/assets/images/nasa-logo.png"
-import ImageOne from "@/shared/assets/images/mursak-logo.png"
 import ImageTwo from "@/shared/assets/images/Hilton-logo.png"
+import ImageOne from "@/shared/assets/images/mursak-logo.png"
+import ImageSex from "@/shared/assets/images/nasa-logo.png"
+import ImageThree from "@/shared/assets/images/nasa-logo.png"
 import ImageFour from "@/shared/assets/images/Uzbekistan_Turizm.png"
+
 import s from "./styles.module.scss"
 
 export const Partners = () => {

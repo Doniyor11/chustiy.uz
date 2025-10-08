@@ -54,7 +54,7 @@ export const Benefits = () => {
             <IconFour />
           </div>
           <Text className={s.cardTitle}>
-              Oshpazlar jamoasi — taom va xizmatda sifat
+            Oshpazlar jamoasi — taom va xizmatda sifat
           </Text>
           <Text className={s.cardSubtitle}>
             Oshpazlarimiz va xizmat ko‘rsatuvchi jamoamiz tajribali, e’tiborli
