@@ -15,7 +15,7 @@ const RecipePage = () => {
         <HeadBanner
           title={"Retseptlar"}
           subtitle={
-            "Bu mijozlar buyurtmasiga ko‘ra turli tadbirlar uchun (to‘y, yubiley, korporativ, seminar, tug‘ilgan kun va h.k.) joyida yoki oldindan tayyorlab taom pishiradigan professional oshpazdir."
+            "Shu kungacha yuzlab retspetlarni sinab ko'rib tayyorlaganmiz, va eng saralarini siz azizlarga taqdim qilamiz"
           }
         />
         <FullRecipe />
