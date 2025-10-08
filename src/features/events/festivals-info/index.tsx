@@ -23,7 +23,7 @@ export const FestivalsInfo = () => {
             Biz sizning to‘y, yubiley, korporativ va boshqa bayramlaringizni
             mazali va chiroyli tashkil qilish uchun barcha zarur xizmatlarni
             taqdim etamiz. Mahalliy va milliy taomlarning betakror lazzati,
-            sifatli xizmat va yuksak mehmondo‘stlik — bizning asosiy
+            sifatli xizmat va yuksak mehmon do‘stlik — bizning asosiy
             qadriyatlarimiz.
           </Text>
           <Button
@@ -52,7 +52,7 @@ export const FestivalsInfo = () => {
             Biz sizning to‘y, yubiley, korporativ va boshqa bayramlaringizni
             mazali va chiroyli tashkil qilish uchun barcha zarur xizmatlarni
             taqdim etamiz. Mahalliy va milliy taomlarning betakror lazzati,
-            sifatli xizmat va yuksak mehmondo‘stlik — bizning asosiy
+            sifatli xizmat va yuksak mehmon do‘stlik — bizning asosiy
             qadriyatlarimiz.
           </Text>
           <Button

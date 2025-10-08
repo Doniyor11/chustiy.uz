@@ -83,7 +83,7 @@ export const ConsultingService = () => {
             <b>Bahriddin Chustiy</b> o‘zining oshpazlik faoliyati davomida
             mehmonlarga nafaqat mazali taomlar, balki unutilmas taassurotlar
             taqdim etuvchi restoranlar tarmog‘ini yaratdi.{" "}
-            <b>Oshxona.uz, Chustiy Cuisines, Tez Food, Sal-Sal, Parvarda</b> va{" "}
+            <b>Oshxona.uz, Chustiy Cuisines, Tez Food, Sal-Sal, Parvarda, Kebab and Rice</b> va
             <b>Aksu</b> restoranlari shaharning turli nuqtalarida mehmonlarni
             doimo ochiq qo‘llar bilan kutib oladi.
           </Text>
