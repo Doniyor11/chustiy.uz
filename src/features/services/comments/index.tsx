@@ -1,5 +1,5 @@
 import { Carousel } from "@mantine/carousel"
-import { Box, Flex, Rating, Text } from "@mantine/core"
+import { Box, Flex, Text } from "@mantine/core"
 import { useMediaQuery } from "@mantine/hooks"
 import Image from "next/image"
 import React from "react"
