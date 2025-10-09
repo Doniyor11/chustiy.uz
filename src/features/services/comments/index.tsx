@@ -54,7 +54,7 @@ export const Comments = () => {
               </Box>
               <Flex className={s.info}>
                 <Text className={s.name}>Zafar Khashimov</Text>
-                <Rating value={5} size="md" color={"#FFC500"} />
+                {/*<Rating value={5} size="md" color={"#FFC500"} />*/}
               </Flex>
             </div>
           </div>
@@ -81,7 +81,7 @@ export const Comments = () => {
               </Box>
               <Flex className={s.info}>
                 <Text className={s.name}>Murod Nazarov</Text>
-                <Rating value={5} size="md" color={"#FFC500"} />
+                {/*<Rating value={5} size="md" color={"#FFC500"} />*/}
               </Flex>
             </div>
           </div>
@@ -107,7 +107,7 @@ export const Comments = () => {
               </Box>
               <Flex className={s.info}>
                 <Text className={s.name}>Xakim Ganiev</Text>
-                <Rating value={5} size="md" color={"#FFC500"} />
+                {/*<Rating value={5} size="md" color={"#FFC500"} />*/}
               </Flex>
             </div>
           </div>
