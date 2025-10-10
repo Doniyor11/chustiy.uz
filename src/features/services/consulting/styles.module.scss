@@ -19,7 +19,15 @@
 
     :global(.section-subtitle) {
       margin: 20px 0 32px;
+      b {
+        font-weight: 400;
+      }
     }
+  }
+
+  .list {
+    list-style: inherit;
+    margin-left: 20px;
   }
 }
 
