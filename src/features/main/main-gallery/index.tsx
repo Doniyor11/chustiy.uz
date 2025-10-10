@@ -45,11 +45,12 @@ export const MainGallery = () => {
           <Carousel
             loop
             align="start"
-            height={400}
+            height={matches ? 400 : 400}
             withControls={false}
             slideGap={matches ? 12 : 20}
-            slideSize={matches ? 200 : 320}
+            slideSize={matches ? "100%" : 320}
             plugins={[autoplay.current]}
+            slidesToScroll={matches ? 1 : "auto"}
             onMouseEnter={autoplay.current.stop}
             onMouseLeave={autoplay.current.reset}
           >
