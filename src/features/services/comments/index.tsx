@@ -72,7 +72,7 @@ export const Comments = memo(() => {
 
   const carouselConfig = useMemo(
     () => ({
-      height: isMobile ? 332 : 450,
+      height: isMobile ? 420 : 450,
       slideSize: isMobile ? "100%" : 528,
       align: isMobile ? "start" : "center",
     }),

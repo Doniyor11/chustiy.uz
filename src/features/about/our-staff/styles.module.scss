@@ -110,7 +110,8 @@
 
 @media screen and (max-width: 992px) {
   .sectionWrapper {
-    margin: 20px auto 0;
+    margin: 20px auto 15px;
+    padding: 0 15px;
 
     :global(.section-title) {
       margin: 0 auto 24px;
