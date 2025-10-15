@@ -46,16 +46,16 @@ export const MenuData = [
       },
     ],
   },
-  {
-    text: "Tadbirlar",
-    path: "events",
-    children: [
-      {
-        text: "Festivallar",
-        path: "/events/festivals",
-      },
-    ],
-  },
+  // {
+  //   text: "Tadbirlar",
+  //   path: "events",
+  //   children: [
+  //     {
+  //       text: "Festivallar",
+  //       path: "/events/festivals",
+  //     },
+  //   ],
+  // },
   {
     text: "Kontaktlar",
     path: "/contacts",
